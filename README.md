@@ -16,3 +16,15 @@ _4 = from hexadecimal to decimal,octal and binary_
 
 3.Output function is available in NumSysCalculation.java
 
+4.This program also performs arithmetic operations such as +,-,*,/
+
+-To do this you will have to convert the given number string to decimal by   
+
+NumSysCon n=new NumsysCon();
+
+n.todec(string_number,from_base);
+
+then use Parse.java file from  another repository 'Calculator program java" send this decimal number string to Parse.java and then 
+convert to the base of your choice.
+
+
