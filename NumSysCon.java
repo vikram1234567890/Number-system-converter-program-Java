@@ -1,7 +1,5 @@
 
 
-package com.c.nccalculator;
-
 import java.util.Arrays;
 
 
