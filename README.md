@@ -27,6 +27,7 @@ n.todec(string_number,from_base);
 then use Parse.java file from  another repository 'Calculator program java" send this decimal number string to Parse.java and then 
 convert to the base of your choice.
 
+There is android app developed with this program, available on play store [NCCalculator](https://play.google.com/store/apps/details?id=com.c.nccalculator)
 
 **Donations:**
 
