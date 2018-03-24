@@ -1,7 +1,4 @@
 
-package com.c.nccalculator;
-
-
 import android.content.Context;
 import android.widget.EditText;
 
@@ -11,11 +8,8 @@ public class NumSysCalculation  extends NumSysCon{
     private String bin[]=new String[100],dec[]=new String[100],oct[]=new String[100],hex[]=new String[100],stringNumber="",array[]=new String[100],strBin="",strDec="",strOct="",strHex="";
     private int numberCount,j=0;
     private boolean minusChar=false;
-Context context;
-    public NumSysCalculation(Context context)
-    {
-        this.context=context;
-    }
+
+ 
     private void joiner(String array[], EditText editText)
     {
         stringNumber="";
@@ -35,7 +29,7 @@ Context context;
 
     void  nsParser(String s,int spinIndex)
     {
-StartActivity startActivity=new StartActivity();
+
         j=0;
         String temp = "";
 
