@@ -1,6 +1,7 @@
 
-import android.content.Context;
-import android.widget.EditText;
+package numbersystemconverter;
+
+
 
 import java.util.Arrays;
 
@@ -9,8 +10,8 @@ public class NumSysCalculation  extends NumSysCon{
     private int numberCount,j=0;
     private boolean minusChar=false;
 
- 
-    private void joiner(String array[], EditText editText)
+
+    private void output(String array[],String type)
     {
         stringNumber="";
 
@@ -22,14 +23,12 @@ public class NumSysCalculation  extends NumSysCon{
 
             else break;
         }
-         editText.setText(stringNumber);
-
+        System.out.println(type+" "+stringNumber);
 
     }
 
-    void  nsParser(String s,int spinIndex)
+    void  nsParser(String s,int index)
     {
-
         j=0;
         String temp = "";
 
@@ -85,7 +84,7 @@ public class NumSysCalculation  extends NumSysCon{
         {
             if(array[i]!=null)
             {
-                if (spinIndex == 1)
+                if (index == 1)
                 {
                     dec[i]=array[i];
                     oct[i]=array[i];
@@ -117,7 +116,7 @@ public class NumSysCalculation  extends NumSysCon{
                     }
 
                 }
-                if (spinIndex ==2)
+                if (index ==2)
                 {
                     bin[i]=array[i];
                     oct[i]=array[i];
@@ -151,7 +150,7 @@ public class NumSysCalculation  extends NumSysCon{
                     }
 
                 }
-                if (spinIndex == 3)
+                if (index == 3)
                 {
                     dec[i]=array[i];
                     bin[i]=array[i];
@@ -186,7 +185,7 @@ public class NumSysCalculation  extends NumSysCon{
                     }
 
                 }
-                if (spinIndex == 4)
+                if (index == 4)
                 {
                     dec[i]=array[i];
                     oct[i]=array[i];
@@ -225,29 +224,29 @@ public class NumSysCalculation  extends NumSysCon{
             else
                 break;
         }
-        if(spinIndex==1)//bin
+        if(index==1)//bin 
         {
-            joiner(dec,startActivity.eText3);
-            joiner(oct,startActivity.eText4);
-            joiner(hex,startActivity.eText5);
+            output(dec,"bin to dec");
+            output(oct,"bin to oct");
+            output(hex,"bin to hex");
         }
-        if(spinIndex==2)//dec
+        if(index==2)//dec
         {
-            joiner(bin, StartActivity.eText2);
-            joiner(oct,startActivity.eText4);
-            joiner(hex,startActivity.eText5);
+            output(bin,"dec to bin");
+            output(oct,"dec to oct");
+            output(hex,"dec to hex");
         }
-        if(spinIndex==3)//oct
+        if(index==3)//oct
         {
-            joiner(dec,startActivity.eText3);
-            joiner(bin, StartActivity.eText2);
-            joiner(hex,startActivity.eText5);
+            output(dec,"oct to dec");
+            output(bin,"oct to bin");
+            output(hex,"oct to hex");
         }
-        if(spinIndex==4)//hex
+        if(index==4)//hex
         {
-            joiner(dec,startActivity.eText3);
-            joiner(oct,startActivity.eText4);
-            joiner(bin, StartActivity.eText2);
+            output(dec,"hex to dec");
+            output(oct,"hex to oct");
+            output(bin,"hex to bin");
         }
 
     }
