@@ -14,6 +14,9 @@ public class NumberSystemConverter {
    		NumSysCalculation numSysCalculation = new NumSysCalculation();
 
 		numSysCalculation.nsParser(s, index);
+	        int output_base=2,input_base=8;
+               System.out.println("Arithmetic operation is :"+n.decto(n.toDec(s,input_base),output_base)) n.toDec(s,8);
+  
     }
     
 }
