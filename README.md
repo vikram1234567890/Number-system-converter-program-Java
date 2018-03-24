@@ -30,4 +30,4 @@ convert to the base of your choice.
 
 **Donations:**
 
-If you like and appreciate my hard work a [donation](paypal.me/vikramvikramvikram) (no matter how small) would be appreciated. I code in my spare time and make no money formally from my codes.
+If you like and appreciate my hard work a [donation](https://paypal.me/vikramvikramvikram) (no matter how small) would be appreciated. I code in my spare time and make no money formally from my codes.
